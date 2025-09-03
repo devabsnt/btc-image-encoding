@@ -3,7 +3,7 @@
 This repository demonstrates that **any file can be permanently encoded into the Bitcoin blockchain**, even without OP_RETURN or explicit file-storage opcodes.  
 
 The project encodes an image (e.g. `image.jpg`) into Bitcoin **addresses**, then spends dust outputs to those addresses.  
-Because addresses are a critical part of Bitcoin’s validation rules, they can never be pruned or removed — meaning the data is immutable once mined.
+Because addresses are a critical part of Bitcoin’s validation rules, they can never be pruned or removed - meaning the data is immutable once mined.
 
 ⚠️ **Disclaimer**:  
 This project is for educational and research purposes only.  
