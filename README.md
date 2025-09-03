@@ -18,11 +18,9 @@ This project is for educational and research purposes only.
    - For each byte, grinds a Bitcoin address whose hash160 prefix matches that byte.  
    - Outputs `encoded.json` containing `{ byte, address }` mappings.
 
-2. **Publishing** (`publish.js`)  
-   - Reads `encoded.json`.  
-   - Builds and signs Bitcoin transactions that send a dust output (≈600 sats) to each encoded address.  
-   - Batches outputs (default: 50 per transaction) to keep transactions valid.  
-   - Broadcasts transactions to the Bitcoin **mainnet** via Blockstream’s API.  
+2. **Publishing**
+   - Read `encoded.json`.  
+   - Write script to send dust transactions to every generated address in encoded.json.
 
 3. **Immutability**  
    - Once mined, the addresses (and therefore the file’s data) are part of Bitcoin forever.  
